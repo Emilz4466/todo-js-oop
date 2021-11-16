@@ -1,4 +1,4 @@
-//window.localStorage.clear();
+
 console.log(window.localStorage);
 
 class Todo {
