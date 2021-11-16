@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 200vh;
+  color: white;
+  background-color: rgb(59, 59, 59);
+  align-items: center;
+}
+
+header {
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+#new-task {
+  display: flex;
+}
+
+input,
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+.add-task-input {
+  flex: 1 1 0%;
+  background-color: rgb(34, 34, 34);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  color: #eee;
+  font-size: 1.25rem;
+}
+
+.add-date-input {
+  background-color: rgb(34, 34, 34);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #eee;
+}
+
+.add-task-button {
+  background-color: rgb(34, 34, 34);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  color: green;
+  font-size: 1.25rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-task-button:hover{
+  opacity: 0.7;
+}
+
+.add-task-button:active {
+  opacity: 0.7;
+}
+
+main {
+  flex: 1 1 0%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.task-list {
+  padding: 1rem;
+}
+
+.task-list h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: grey;
+  margin-bottom: 1rem;
+}
+
+.task {
+  list-style-type: none;
+  display: flex;
+  background-color: rgb(34, 34, 34);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.task .content {
+  flex: 1 1 0%;
+  text-align: start;
+}
+
+.task .content .text {
+  color: #eee;
+  font-size: 1.25rem;
+  width: 100%;
+  display: block;
+}
+
+.task .content .date {
+  color: #eee;
+}
+
+
+.task .c .task .task .content:not:read-only {
+  color: rgb(153, 101, 110);
+}
+
+.task .actions {
+  display: flex;
+  margin: 0 -0.5rem;
+}
+
+.task .actions button:hover {
+  opacity: 0.7;
+}
+
+.task .actions button:active {
+  opacity: 0.6;
+}
+
+.task .actions .edit {
+  background-color: none;
+  color: orange;
+}
+
+.task .actions .delete {
+  background-color: none;
+  color: red;
+}
